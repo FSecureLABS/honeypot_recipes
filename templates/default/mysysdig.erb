@@ -1,0 +1,31 @@
+#!/bin/sh
+
+DESC="sysdig as a service"
+NAME="sysdig"
+
+do_start()
+{
+        echo "Starting $NAME";
+        sysdig -C 5000 -W 3 -w /usr/local/src/image.$(date +"%Y%m%d-%H%M%S").gz > /dev/null 2>&1 &
+}
+
+do_stop()
+{
+        echo "Stopping $NAME";
+        killall sysdig
+}
+
+case "$1" in
+   start)
+     do_start
+     ;;
+   stop)
+     do_stop
+     ;;
+   *)
+     echo "Usage: /etc/init.d/mysysdig start|stop"
+     exit 1
+     ;;
+esac
+
+exit 0
