@@ -64,6 +64,12 @@ when 'redhat', 'centos'
 	  command 'curl -s -o /etc/yum.repos.d/draios.repo http://download.draios.com/stable/rpm/draios.repo'
 	end
 
+#add epel repository
+	execute 'add-epel-repo' do
+	  command 'rpm -i http://mirror.us.leaseweb.net/epel/6/i386/epel-release-6-8.noarch.rpm'
+	  ignore_failure true
+	end
+
 #install the appropriate linux headers
 	execute 'install-linux-headers' do
 	  command 'yum -y install kernel-devel-$(uname -r)'
