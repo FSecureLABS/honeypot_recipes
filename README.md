@@ -25,10 +25,12 @@ Run the cookbook with the following command:
 
 ## License ##
 
-See the `LICENSE` file for full details.
+See the `LICENSE` file for details.
 
 ## Contact ##
 
 Please submit any bugs on the Github project page at:
 
 <https://github.com/panagioto/honeypot_recipes>
+
+or give me a shout at twitter [@den_n1s](https://twitter.com/den_n1s)
