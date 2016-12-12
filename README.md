@@ -15,13 +15,17 @@ In order to run the cookbook you should install:
 * chefdk <https://downloads.chef.io/chefdk>
 
 Create a directory named **cookbooks** and clone the repository in the new directory:
-`mkdir cookbooks && cd cookbooks`
-`git clone https://github.com/mwrlabs/honeypot_recipes sysdig-falco`
+
+* `mkdir cookbooks && cd cookbooks`
+* `git clone https://github.com/mwrlabs/honeypot_recipes sysdig-falco`
 
 Run the cookbook with the following command:
-`chef-client --local-mode --runlist 'recipe[sysdig-falco]'`
+
+* `chef-client --local-mode --runlist 'recipe[sysdig-falco]'`
 
 ## License ##
+
+See the `LICENSE` file for full details.
 
 ## Contact ##
 
