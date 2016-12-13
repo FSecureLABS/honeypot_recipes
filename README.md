@@ -33,4 +33,4 @@ Please submit any bugs on the Github project page at:
 
 <https://github.com/panagioto/honeypot_recipes>
 
-or give me a shout at twitter [@den_n1s](https://twitter.com/den_n1s)
+or give me a shout on twitter [@den_n1s](https://twitter.com/den_n1s)
