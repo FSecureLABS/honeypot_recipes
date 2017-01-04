@@ -1,0 +1,7 @@
+name 'sysdig-falco'
+maintainer 'Dennis Panagiotopoulos'
+maintainer_email 'dennis.panagiotopoulos@mwrinfosecurity.com'
+license 'all_rights'
+description 'Installs/Configures sysdig-falco'
+long_description 'Installs/Configures sysdig-falco'
+version '0.1.0'
